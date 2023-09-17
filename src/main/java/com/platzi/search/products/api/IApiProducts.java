@@ -16,7 +16,8 @@ public interface IApiProducts {
 
     /**
      * Permite devolver todo el listado de productos
-     * @return La lista de productos
+     * @param queryMap Los query string necesarios para la petición
+     * @return La lista de productos devueltos por el servicio
      */
     @RequestLine("GET /products")
     List<Product> products(@QueryMap Map<String, Object> queryMap);

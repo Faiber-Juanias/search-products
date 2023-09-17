@@ -5,6 +5,12 @@ import java.util.Map;
 
 public class CLIFunctions {
 
+    /**
+     * Construye los query string de la petición en base a los argumentos
+     * recibidos por terminal
+     * @param cliArguments Argumentos pasados por terminal
+     * @return Los query string de la petición
+     */
     public static Map<String, Object> toMap(CLIArguments cliArguments) {
         Map<String, Object> params = new HashMap<>();
 //        params.put("keyword", cliArguments.getKeyword());
