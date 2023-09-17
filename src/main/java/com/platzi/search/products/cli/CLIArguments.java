@@ -2,6 +2,9 @@ package com.platzi.search.products.cli;
 
 import com.beust.jcommander.Parameter;
 
+/**
+ * Representa todos los argumentos que pueden ser pasados por terminal
+ */
 public class CLIArguments {
 
     @Parameter(
@@ -12,7 +15,8 @@ public class CLIArguments {
     )
     private String keyword;
     @Parameter(
-            descriptionKey = "ID"
+            descriptionKey = "ID",
+            names = {"--id", "-i"}
     )
     private int id;
     @Parameter(
@@ -103,7 +107,8 @@ public class CLIArguments {
     @Override
     public String toString() {
         return "CLIArguments{" +
-                "id=" + id +
+                "keyword='" + keyword + '\'' +
+                ", id=" + id +
                 ", title='" + title + '\'' +
                 ", price=" + price +
                 ", priceMin=" + priceMin +

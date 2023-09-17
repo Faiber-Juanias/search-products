@@ -6,7 +6,7 @@ plugins {
 group 'com.platzi'
 version '0.1.0'
 
-sourceCompatibility = 1.8
+sourceCompatibility = 11
 
 application {
     mainClassName = "com.platzi.search.products.ManageProducts"
@@ -20,6 +20,7 @@ dependencies {
     implementation group: 'com.beust', name: 'jcommander', version: '1.82'
     implementation group: 'io.github.openfeign', name: 'feign-core', version: '12.3'
     implementation group: 'io.github.openfeign', name: 'feign-json', version: '12.3'
+    implementation group: 'io.github.openfeign', name: 'feign-gson', version: '12.3'
     implementation group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.15.2'
     implementation group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.15.2'
 

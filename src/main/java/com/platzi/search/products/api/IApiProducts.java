@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Sirve como la base de las peticiones que se harán con FEIGN
+ * Define el contrato de servicio que se consumirá
  */
 @Headers("Accept: application/json")
 public interface IApiProducts {
